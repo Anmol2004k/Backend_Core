@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "browser,V8 Engine, overall working\r using import , export\r use npm\r express",
+  "type": "module",
   "main": "2script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,12 +14,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Anmol2004k/Backend_Core/issues"
   },
   "homepage": "https://github.com/Anmol2004k/Backend_Core#readme",
   "dependencies": {
+    "express": "^5.2.1",
     "one-liner-joke": "^1.2.2"
   }
 }
