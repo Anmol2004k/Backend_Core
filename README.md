@@ -36,4 +36,23 @@ app.listen(3000, () => {
 3. packaje.json m >>"description" ke niche ye line add kar dein
          "type": "module",
 
-4. Go on local host  http://localhost:3000   code is live  ✅        
+4. Go on local host  http://localhost:3000   code is live  ✅     
+
+
+
+ for live changes and live view 🚀🚀🚀
+
+1. install nodemon
+   npm i nodemon -g
+
+2. run the file with NODEMON
+ nodemon (./script.js) 
+        koi bhi file
+3. if it show error try this 
+npx nodemon (./script.js)  ✅
+
+
+MIDDELWARE...
+
+
+

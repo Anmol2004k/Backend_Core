@@ -3,8 +3,21 @@ const app = express()
 
 app.get('/', (req, res) => {
   res.send('Hello World')
-})
+});
+ 
+app.use(function(req, res, next) {
+   console.log("Hello from middleware");
+   next();
+});
 
+app.use(function(req, res, next) {
+   console.log("Hello from middleware 2");
+   next();
+});
+
+app.get('/proof', (req, res) => {
+  res.send('Hello Everyone ksee hai aap log');
+});
 app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000')
   })
