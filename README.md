@@ -1,11 +1,11 @@
-browser,V8 Engine, overall working
-using import , export
-use npm
-uses of any packeage 
+##  browser,V8 Engine, overall working
+## using import , export
+## use npm
+## uses of any packeage 
 1. npm init -y   >>>>     es s setup hoga envirioment node  module , package.json etc..
 2. npm i package ka naam >>> wo package install ho jygaa
 
-express 
+## Express 
 USE HOTA HAI ROUTING K LIYE.
 alg alg page alag alg rout(p action m aaye meand dikhe)
 
@@ -15,7 +15,7 @@ Example - www.instagram/reels.com
 Example - www.instagram/notification.com
 
 
-  use of express >>>
+##  use of express >>>
 
  1. npm i express
 
@@ -40,7 +40,7 @@ app.listen(3000, () => {
 
 
 
- for live changes and live view 🚀🚀🚀
+## for live changes and live view 🚀🚀🚀
 
 1. install nodemon
    npm i nodemon -g
@@ -52,7 +52,67 @@ app.listen(3000, () => {
 npx nodemon (./script.js)  ✅
 
 
-MIDDELWARE...
+## MIDDELWARE...
+
+Routing k bich m hum koi bhi kaam krva sakte hai 
+
+app.use(function(req, res, next) {
+   console.log("Hello from middleware 2");
+   next();
+});
+
+kafi useful concept hai , multiple middelware bhi use ho sakta hai 
+
+
+Express >>>
+
+## node vs express 
+
+-- node main hai , node k pass capa baility hai server ka code likhne(HTTP) ka but wo kafi complicated hai esliye hu express ka use krte hai server bnane k liye easily sab chiz ho jata hai 
+
+## What is Express js - Package, Routing
+
+## Why is Express js -- HTTp is diffult to use but express is easy...
+
+## ROUTING  -- Routs bnana ek process ko Routing bolte hai 
+
+/ profile
+/ home
+/ blog
+
+
+## app.use(function(req, res, next) {
+   console.log("Hello from middleware 2");
+   next();
+});
+
+## Request  (req)
+
+sara data hota hai aane wala  user ka jsee location , IP , Device name Etc..
+
+## Response  (res)
+
+esme control hai jiske bases p hum server se response bejte hai 
+
+## next ();
+
+push hota hai 1  middelware s rout pjne l kiye .>>>> 
+
+
+## Daynamic routing 
+
+asaa koi route jiska khouch parts same hota khouch url chnge hota rahata hai eske liye hum  Daynamic routing bnate hai 
+
+/profile/anmol
+/profile/kanchan
+/profile/ratan
+/profile/prince 
+/profile/rohini
+
+/profile/:username >> acess fo every url
+
+## Tamplate Engine >> Ejs
+
 
 
 
