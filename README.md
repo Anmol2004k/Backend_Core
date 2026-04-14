@@ -113,6 +113,4 @@ asaa koi route jiska khouch parts same hota khouch url chnge hota rahata hai esk
 
 ## Tamplate Engine >> Ejs
 
-
-
-
+Ejs is is html for backend with super power 

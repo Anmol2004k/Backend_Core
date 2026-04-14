@@ -18,6 +18,16 @@ app.use(function(req, res, next) {
 app.get('/proof', (req, res) => {
   res.send('Hello Everyone ksee hai aap log');
 });
+
+app.get('/profile/Harsh', (req, res) => {
+  res.send('Hello Everyone ksee hai aap log i am HERSHHHH');
+});
+
+app.get('/profile/:username', (req, res) => {
+   res.send(`Hello ${req.params.username}, ksee hai aap log`);
+});
+
+
 app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000')
   })
