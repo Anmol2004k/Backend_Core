@@ -163,7 +163,7 @@ static files setup karne ke liye:
 
    1. create a folder called public
    2. create three folders inside it, images, stylesheets, javascripts
-   3. configure the express static
+   3. configure the express static >> app.use(express.static('./public'));   >> rout bn jygaa  bar bar ../public.____
    4. understand the path
 
 ------------------------------

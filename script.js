@@ -1,19 +1,22 @@
 import express from 'express'
 const app = express()
 
+app.set("view engine", "ejs");
+app.use(express.static('./public'));
+
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.render('index');
 });
  
-app.use(function(req, res, next) {
-   console.log("Hello from middleware");
-   next();
-});
+// app.use(function(req, res, next) {
+//    console.log("Hello from middleware");
+//    next();
+// });
 
-app.use(function(req, res, next) {
-   console.log("Hello from middleware 2");
-   next();
-});
+// app.use(function(req, res, next) {
+//    console.log("Hello from middleware 2");
+//    next();
+// });
 
 app.get('/proof', (req, res) => {
   res.send('Hello Everyone ksee hai aap log');
