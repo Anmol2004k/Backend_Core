@@ -114,3 +114,28 @@ asaa koi route jiska khouch parts same hota khouch url chnge hota rahata hai esk
 ## Tamplate Engine >> Ejs
 
 Ejs is is html for backend with super power 
+
+in HTMl 1+2= we can see 1+2=
+in EJS 1+2=  we can perform Calculation on Server side
+
+
+## EJs SETUP 
+1. install EJS >>>     npm i ejs
+2. configure ejs >>>   app.set("view engine","Ejs")
+3. ek views folder bnao
+4. usme ejs file bnao
+5. send ki jagah render kro >>> render krte time Dhyan de ki aap views Folder k andar walii hi koi file ka naam likhe and render function m file ka naam --.ejs n likhee
+
+Example = 
+
+## normal case
+app.get('/proof', (req, res) => {
+  res.send("Proof.html");
+});
+
+
+## EJS m 
+app.get('/proof', (req, res) => {
+  res.send("proof");
+});
+
