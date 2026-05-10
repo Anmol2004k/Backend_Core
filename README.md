@@ -68,7 +68,7 @@ Express >>>
 
 ## node vs express 
 
--- node main hai , node k pass capa baility hai server ka code likhne(HTTP) ka but wo kafi complicated hai esliye hu express ka use krte hai server bnane k liye easily sab chiz ho jata hai 
+-- node main hai , node k pass capa baility hai server ka code likhne(HTTP) ka but wo kafi complicated hai esliye hum express ka use krte hai server bnane k liye easily sab chiz ho jata hai 
 
 ## What is Express js - Package, Routing
 
@@ -111,7 +111,10 @@ asaa koi route jiska khouch parts same hota khouch url chnge hota rahata hai esk
 
 /profile/:username >> acess fo every url
 
-## Tamplate Engine >> Ejs
+## Tamplate Engine >> Ejs , Jade,pug etc..
+
+# Ejs kay hai >> 
+ye 1 markup type language hai jo baad m HTML m convert ho jata hai 
 
 Ejs is is html for backend with super power 
 
@@ -136,6 +139,33 @@ app.get('/proof', (req, res) => {
 
 ## EJS m 
 app.get('/proof', (req, res) => {
-  res.send("proof");
+  res.render("proof");
 });
+
+
+## use Case  >>>>>
+# <%= name %>
+
+khi bhi html m ki chiz ko replace kr do 
+
+app.get('/proof', (req, res) => {
+  res.render("proof",{name : "Anmol"});
+});
+
+aab proof page p jhaa bhi name hogaa wo Anmol m convert ho jygaa
+#  THIS IS THE SUPERPOWER OF EJS
+
+## Static Files Uses (Industries Standard)
+
+  
+------------------------------
+static files setup karne ke liye:
+
+   1. create a folder called public
+   2. create three folders inside it, images, stylesheets, javascripts
+   3. configure the express static
+   4. understand the path
+
+------------------------------
+
 
