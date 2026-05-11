@@ -169,3 +169,27 @@ static files setup karne ke liye:
 ------------------------------
 
 
+## Error Handler
+------------------------------
+1. reeor handler wala code app.use m use kro 
+
+#EXAMPLE =
+
+app.use(function errorHandler (err, req, res, next) {
+if (res.headersSent) {
+return next(err)
+}
+res.status(500)
+res.render('error', { error: err })
+})
+
+2. Then hume 1 Error ka route bnanan hai 
+
+app.get("/error", function (req, res, next) {
+throw Error("Something went wrong");
+});
+
+3. then page bna lo error.ejs,error.css sab aache s link kr use kr lo 
+
+
+------------------------------
